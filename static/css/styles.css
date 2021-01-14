@@ -1,0 +1,87 @@
+
+.header{
+    padding: 10px 50px;
+    background-color:grey;
+    color: #f1f9f9;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.marq{
+    color: cyan;
+}
+.result-footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(20, 46, 71);
+   color: white;
+   text-align: center;
+   padding: 1px 5px;
+   position: fixed;
+}
+#age,#trestbps,#chol,#thalach,#peak  {
+    width: 100%;
+}
+
+.details{
+    height: 100%;
+    width: 100%;
+
+}
+.result{
+    height: 100%;
+    width: 100%;
+}
+.label-class{
+    text-decoration-style: both;
+}
+
+
+
+fieldset{
+    /* text-align: center; */
+    border:solid ;
+    /* padding: 13px 16px; */
+    width: 75%;
+    border-left: 5%;
+    /* margin-left: 10px; */
+    /* padding-left: 20px; */
+    background-color: lightgreen;
+}
+
+.col{
+margin-left: 25%;
+margin-top: 7%;
+}
+
+.report{
+    font-size: 24px;
+    color: green;
+}
+
+.yes{
+    padding-left : 25px;
+    padding-top: 20px;
+    text-align: center;
+    color: rgb(255, 136, 0);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: lightslategray;
+   color: white;
+   text-align: right;
+   padding: 1px 5px;
+   margin-top: 10%;
+}
+
+.predictions{
+    color : black;
+    text-align: left;
+}
