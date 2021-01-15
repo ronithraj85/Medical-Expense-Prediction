@@ -98,13 +98,13 @@ def predict():
                                     sex_male
                                     ]])
 
-        output = round(prediction[0], 2)
+        output = round(prediction[0])
 
-        return render_template('result.html', gender="Sex - {}".format(sex), medical="Smoker - {}".format(smoker), area="Region - {}".format(region), years="Age - {}".format(age), body_mass="Body Mass Index - {}".format(bmi), kids="Number of children - {}".format(children), medical_expense="Your predicted medical expense for next year is - {}".format(output))
+        return render_template('result.html', gender="Sex - {}".format(sex), medical="Smoker - {}".format(smoker), area="Region - {}".format(region), years="Age - {}".format(age), body_mass="Body Mass Index - {}".format(bmi), kids="Number of children - {}".format(children), medical_expense=output)
 
     return render_template("index.html")
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 8081))
     app.run(host="0.0.0.0", port=port, debug=True)

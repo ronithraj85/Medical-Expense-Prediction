@@ -25,48 +25,50 @@
         <div class="col">
             <!-- <div class="row"> -->
             <form action="\predict" method="post">
-                <fieldset>
+                <fieldset class="index-fieldset">
                     <div class="details">
                         <div class="col-sm-6">
                             <b><label>Sex:</label></b>
-                            <input type="radio" name="gender" value="male">Male,
+                            <input type="radio" name="gender" value="male" required>Male,
                             <input type="radio" name="gender" value="female">Female
                             <br>
                             <b><label>Smoker:</label></b>
-                            <input type="radio" name="smoker" value="yes">Yes,
+                            <input type="radio" name="smoker" value="yes" required>Yes,
                             <input type="radio" name="smoker" value="no">No
                             <br>
                             <b><label>Region:</label></b><br>
-                            <input type="radio" name="regions" value="NorthEast">North East,
+                            <input type="radio" name="regions" value="NorthEast" required>North East,
                             <input type="radio" name="regions" value="NorthWest">North West,
                             <input type="radio" name="regions" value="SouthEast">South East,
                             <input type="radio" name="regions" value="SouthWest">South West
                             <br>
-                            <br>
                             <b><label>Age:</label></b>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="text" name="age" placeholder='Enter the age'>
+                            <input type="text" name="age" placeholder='Enter the age' required>
                             <br>
                             <b><label>BMI:</label></b>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="text" name="bmi" placeholder='Enter the Body Mass Index'>
+                            <input type="text" name="bmi" placeholder='Enter the Body Mass Index' required>
                             <br>
                             <b><label>children:</label></b>
-                            <input type="text" name="children" placeholder='Enter the number of children'>
-                            <br><br>
-                            <center>
-                                <input type="submit">
-                            </center>
-
+                            <input type="text" name="children" placeholder='Enter the number of children' required>
                             <br>
                         </div>
-                    </div>
-                </fieldset>
-            </form>
-            <!-- </div> -->
-        </div>
-    </div>
 
+                        <center>
+                            <input type="submit">
+                        </center>
+                        <br>
+                    </div>
+        </div>
+        </fieldset>
+        </form>
+        <!-- </div> -->
+
+    </div>
+    </div>
+    <br>
+    <br>
     <div class="footer">
         <p>
             <b>

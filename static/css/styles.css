@@ -40,7 +40,7 @@
 
 
 
-fieldset{
+.index-fieldset{
     /* text-align: center; */
     border:solid ;
     /* padding: 13px 16px; */
@@ -51,6 +51,18 @@ fieldset{
     background-color: lightgreen;
 }
 
+.result-fieldset
+{
+    border:solid;
+    /* border-left: 25%; */
+    /* margin-left: 120px; */
+    width: 55%;
+}
+
+.result
+{
+    color: rgb(255, 136, 0);
+}
 .col{
 margin-left: 25%;
 margin-top: 7%;
@@ -84,4 +96,5 @@ margin-top: 7%;
 .predictions{
     color : black;
     text-align: left;
+    padding-left: 25px;
 }

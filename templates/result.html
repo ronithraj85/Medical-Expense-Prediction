@@ -17,37 +17,37 @@
 </head>
 
 <body>
-
-    <div class="header">
-        <h3 class="marq">
-            <b>Medical Expenses Predicted Results</b>
-        </h3>
-    </div>
-
-    <br><br><br>
-
-    <div>
-        <center>
-            <h2>Entered Details are given below:</h2>
-        </center>
-        <br>
-        <h3 class="predictions">
-            {{ gender }}<br>
-            {{ medical }}<br>
-            {{ area }}<br>
-            {{ years }}<br>
-            {{ body_mass }}<br>
-            {{ kids }}<br>
-
-            {{medical_expense}}
-        </h3>
-    </div>
-    <div class="result-footer">
-        <p>
-            <b>
-                <center>©2021 January - Ronith Raj</center>
-            </b>
-        </p>
+    <div class="col-sm-12">
+        <div class="header">
+            <h3 class="marq">
+                <b>Medical Expenses Predicted Results</b>
+            </h3>
+        </div>
+        <br><br>
+        <div>
+            <center>
+                <h3>Entered Details are given below:</h3>
+            </center>
+            <br>
+            <fieldset class="result-fieldset">
+                <h4 class="predictions">
+                    {{ gender }}<br>
+                    {{ medical }}<br>
+                    {{ area }}<br>
+                    {{ years }}<br>
+                    {{ body_mass }}<br>
+                    {{ kids }}<br>
+                    <p class="result">Your predicted medical expense for next year is - ₹.{{medical_expense}}</p>
+                </h4>
+            </fieldset>
+        </div>
+        <div class="result-footer">
+            <p>
+                <b>
+                    <center>©2021 January - Ronith Raj</center>
+                </b>
+            </p>
+        </div>
     </div>
 </body>
 
