@@ -100,7 +100,7 @@ def predict():
 
         output = round(prediction[0])
 
-        return render_template('result.html', gender="Sex - {}".format(sex), medical="Smoker - {}".format(smoker), area="Region - {}".format(region), years="Age - {}".format(age), body_mass="Body Mass Index - {}".format(bmi), kids="Children - {}".format(children), medical_expense=output)
+        return render_template('result.html', gender="Sex - {}".format(sex), medical="Smoker - {}".format(smoker), area="Region - {}".format(region), years="Age - {}".format(age), body_mass="Body Mass Index - {}".format(bmi), kids="Number of children - {}".format(children), medical_expense=output)
 
     return render_template("index.html")
 
